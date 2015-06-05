@@ -1,0 +1,4 @@
+cd pauta
+binary
+put ../platforms/android/bin/Pauta.apk
+quit

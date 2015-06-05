@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Pauta</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<link rel="stylesheet" href="lib/mobileit/css/topcoat-mobile-mobileit-blue.css">
+		<link rel="stylesheet" href="lib/mobileit/css/angular-mobileitframework.css">
+		<link rel="stylesheet" href="lib/snap.css">
+		<link rel="stylesheet" href="styles/app.css"/>
+		
+		<script type="text/javascript" src="phonegap.js"></script>
+
+		<script src="lib/jquery-1.11.1.min.js"></script>
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="lib/angular/angular-route.min.js"></script>
+		<script src="lib/angular/angular-animate.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="lib/mobileit/js/angular-mobileitframework.js"></script>
+		
+		<script type="text/javascript" charset="utf-8" src="lib/iscroll.js"></script>
+		<script type="text/javascript" charset="utf-8" src="lib/fastclick.js"></script>
+		<script type="text/javascript" charset="utf-8" src="lib/snap.js"></script>
+		
+		<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/routes.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/controllers.js"></script>
+		
+		<script type="text/javascript">			
+			document.addEventListener('deviceready', function onDeviceReady() {
+				angular.bootstrap(document, ['pautaApp']);
+			}, false);
+		</script>
+    </head>
+    <body ng-cloak>
+		<mbl-screen></mbl-screen>
+		<mbl-loader>Aguarde...</mbl-loader>
+    </body>
+</html>

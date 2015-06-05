@@ -1,0 +1,15 @@
+<mbl-page id="authContainer">
+	<div id="authContent">
+		<h1>Pauta Eletrônica</h1>
+		
+		<form ng-submit="login()">
+			<div><input type="text" ng-model="username" class="topcoat-text-input" placeholder="Usuário" /></div><br/>
+			<div><input type="password" ng-model="password" class="topcoat-text-input" placeholder="Senha" /></div><br/>
+			<button type="submit" class="topcoat-button">Entrar</button>
+			<div>{{ message }}</div>
+		</form>
+		
+		<br/><br/>
+		<img src="images/mobileIt-04.png">
+	</div>
+</mbl-page>

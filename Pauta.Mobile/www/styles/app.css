@@ -1,0 +1,100 @@
+#mblMain {
+  background-color: #f5f0e8;
+}
+
+#authContainer {
+    text-align: center;
+    padding: 0;
+	background-color: #ffffff;
+	background-image: url(../images/background.jpg);
+	min-height: 2000px;
+	overflow: hidden;
+}
+
+#authContent {
+	background-color: rgba(255, 255, 255, 0.9);
+	margin-top: 50px;
+	display: inline-block;
+	padding: 20px;
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+}
+
+.topcoat-text-input:focus {        
+    border: 1px solid #b3b3b3;
+    background-color: #FFF;
+}
+
+button.attendance {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	width: 70px;
+	padding: 0px 5px;
+	font-size: 12px;
+	line-height: 32px;
+	background-color: #40A066;
+}
+
+button.attendance:hover {
+	background-color: #40A066;
+}
+
+button.unattendant {
+	background-color: #D51907
+}
+
+button.unattendant:hover {
+	background-color: #D51907
+}
+
+.studentInfo {
+	width: 80%;
+	word-wrap: normal;
+}
+
+/* .topcoat-navigation-bar {
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.5);
+} */
+
+.topcoat-navigation-bar__button {
+  position: absolute;
+  -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+  -webkit-border-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 0 9px;
+  text-shadow: #000 0px 1px 1px;
+  text-decoration: none;
+  white-space: nowrap;
+  
+  border: 1px solid #354e71;
+  border-top-color: #30363e;
+  border-bottom-color: #375073;
+  
+  background-color: #6d84a2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b0bccd), color-stop(0.01, #dedae3), color-stop(0.02, #b0bccd), color-stop( 0.5, #889bb3), color-stop( 0.51, #8195af), color-stop( 0.98, #7086a4), color-stop(0.99, #596c83), to(#6d84a2));
+  background-image: -ms-linear-gradient(top, #b0bccd, #6d84a2);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#b0bccd', endColorstr='#6d84a2', GradientType=0);
+ 
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  width:80px;
+  top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.left .topcoat-navigation-bar__button {
+	left: 2px;
+}
+
+.right .topcoat-navigation-bar__button {
+	right: 0px;
+}

@@ -1,0 +1,32 @@
+<mbl-page>
+	<div class="topcoat-navigation-bar">
+		<div class="topcoat-navigation-bar__item left quarter">
+			<div class="topcoat-navigation-bar__button" ng-click="mbl.screen.back()"><span class="fa fa-chevron-left"></span> Voltar</div>
+		</div>
+		<div class="topcoat-navigation-bar__item center half">
+			<h1 class="topcoat-navigation-bar__title">Chamada</h1>
+		</div>
+		<div class="topcoat-navigation-bar__item right quarter">
+			<div class="topcoat-navigation-bar__button" ng-click="mbl.app.logoff()">Sair <span class="fa fa-sign-out"></span></div>
+		</div>
+	</div>
+	<mbl-page-content>
+		<div class="topcoat-list__container" ng-show="ready">
+			<form ng-submit="save()">
+				<h3 class="topcoat-list__header">{{ discipline }} - Sala: {{ classRoom }}</h3>
+				<ul class="topcoat-list">
+					<li ng-repeat="attendance in myclass.Attendances" class="topcoat-list__item">
+						<div class="studentInfo">{{ attendance.StudentNumber }}. {{ attendance.StudentName }}</div>
+						
+						<button type="button" class="topcoat-button attendance" ng-show="attendance.Attendant" ng-click="attendance.Attendant = !attendance.Attendant">Presente</button>
+						<button type="button" class="topcoat-button attendance unattendant" ng-hide="attendance.Attendant" ng-click="attendance.Attendant = !attendance.Attendant">Ausente</button>
+					</li>
+				</ul>
+
+				<section style="padding: 8px">
+					<button type="submit" class="topcoat-button--large">Salvar</button>
+				</section>
+			</form>
+		</div>
+	</mbl-page-content>
+</mbl-page>

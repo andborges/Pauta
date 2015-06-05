@@ -1,0 +1,26 @@
+<mbl-page>
+	<div class="topcoat-navigation-bar">
+		<div class="topcoat-navigation-bar__item left quarter">
+			<div class="topcoat-navigation-bar__button" ng-click="mbl.screen.back()"><span class="fa fa-chevron-left"></span> Voltar</div>
+		</div>
+		<div class="topcoat-navigation-bar__item center half">
+			<h1 class="topcoat-navigation-bar__title">Suas aulas</h1>
+		</div>
+		<div class="topcoat-navigation-bar__item right quarter">
+			<div class="topcoat-navigation-bar__button" ng-click="mbl.app.logoff()">Sair <span class="fa fa-sign-out"></span></div>
+		</div>
+	</div>
+
+	<mbl-page-content>
+		<div class="topcoat-list__container" ng-show="ready">
+			<div>
+				<ul class="topcoat-list">
+					<li class="topcoat-list__item" ng-repeat="class in classes" ng-click="showClass(class.Id, class.Discipline, class.ClassRoom)">
+						<strong>{{class.Discipline}}</strong><br/>
+						Sala: {{class.ClassRoom}} - Horário: {{class.InitialDate | date:'HH:mm'}}
+					</li>
+				</ul>
+			</div>
+		</div>
+	</mbl-page-content>
+</mbl-page>
